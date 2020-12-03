@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+html {
+	font-family: 'Comic Neue', Helvetica, sans-serif;
+	font-size: 16px;
+  }
+  @import 'ok_colors';
+
+.menuHeader {
+    top:0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100vw;
+    height: 3rem;
+    margin-bottom: 2vh;
+    position: fixed;
+    position: relative;
+    z-index: 5;
+}
+
+.only {
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+}
+
+.only a {
+    padding: 1rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-decoration: none;
+    flex-shrink: 1;
+    flex-basis: 30px;
+    color: $okBlue;
+    margin-right: auto;
+    font-weight: 900;
+    transition: all 0.3s ease 0s; // makes the menu appear nicely
+    font-family: 'Comic Neue', Helvetica, sans-serif;
+    top: 0;
+    left: 0;
+    padding-left: 1.5vw;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: $okBlue;
+    background-color: white;
+    border-radius: solid white 5px;
+}
+
+input {
+    width: 6vw;
+    font-size: 0.7rem;
+    border: 1px solid white;
+    border-radius: solid white 5px;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+.only .active {
+    color: $ctaHover;
+}
+
+.only a:hover {
+    color: $okActive;
+    transition: 500ms;
+}
+
+.logo {
+    width: 10rem;
+    justify-content: space-around;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 5rem;
+    border-radius: 30px;
+}
+
+.underline {
+    width: 30%;
+    margin-left: 35%;
+    margin-left: 35%;
+}

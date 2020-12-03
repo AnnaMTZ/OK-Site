@@ -1,0 +1,46 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+html {
+	font-family: 'Comic Neue', Helvetica, sans-serif;
+	font-size: 16px;
+  }
+
+
+$myFont: 'Comic Neue', Helvetica, sans-serif;
+
+
+// okBlue - main color - is used for the footer, recButtons, mobile background and big titles in recepten when needed
+
+$okBlue: #233674;
+
+
+// Brown for active menu buttons
+
+$okActive: #8C5A27;
+
+
+// Ligthgreen for Cta buttons ('button' class in buttons.scss)
+
+$ctaButton: #BFB526;
+
+
+// Second main color - Darker Green color where there is not enough photos and other colors
+
+$sndColor: #736C1D;
+
+
+// Brighter (orange) ctaButton hover:
+
+$ctaHover: #F7932F;

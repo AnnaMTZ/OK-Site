@@ -1,0 +1,441 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+html {
+	font-family: 'Comic Neue', Helvetica, sans-serif;
+	font-size: 16px;
+  }
+
+// MENU //
+@import 'ok_colors';
+@import 'menu';
+
+//BODY
+
+@import 'buttons';
+
+// .mainCont {
+// 	margin-top: 8vh;
+// }
+
+.menuHeader {
+	position: fixed;
+}
+
+// ABOUT BORSH
+
+.borshTitle {
+	width: 80vw;
+	margin: 0 10vw;
+	color: rgb(32, 29, 29);
+	height: 32vh;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	font-size: 6rem;
+	line-height: 10rem;
+	font-weight: 600;
+	// background: rgba(254, 254, 255, 0.6);
+	margin: 37vh auto;
+	border-radius: 15px;
+}
+
+.borshTitle a {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.imgCont {
+	background: url("home_recepten/borsh.jpg");
+	position: absolute;
+    left: 0px;
+    top: 0px;
+	z-index: -1;
+	height: 100vh;
+	width: 100%;
+}
+
+.imgCont img {
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+}
+
+.imgOverlay {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.only {
+	grid-row: 1/2;
+	grid-column: 2/3;
+	position: relative;
+	border-radius: 7px;
+	top: 0;
+	left: 0;
+	vertical-align: top;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.only a {
+	text-decoration: none;
+	flex-shrink: 1;
+	flex-basis: 30px;
+	color: #0b1e59;
+	margin-right: auto;
+	transition: all 0.3s ease 0s; // makes the menu appear nicely
+	top: 0;
+	left: 0;
+	vertical-align: top;
+	font-family: 'Comic Neue', Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+/// main body
+
+.AboutText {
+	width: 80vw;
+	margin: 7vh auto;
+	text-align: center;
+	line-height: 5vh;
+	font-size: 1.8rem;
+}
+
+.HeadText {
+	font-size: 2rem;
+	line-height: 4rem;
+	display: flex;
+	align-items: center;
+	background-color: rgb(236, 166, 73);
+	color: rgb(59, 53, 53);
+	margin: 10vh auto;
+	justify-content: center;
+	font-weight: bold;
+}
+
+//boulion
+
+.Bouillon {
+	display: grid;
+	display: flex;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 1fr;
+	width: 80vw;
+	margin-left: 15vw;
+	margin-right: 15vw;
+	margin-bottom: 5vh;
+}
+
+.borshIngsLeft {
+width: 50%;
+}
+
+.borshIngsRight {
+width: 50%;
+}
+
+.ingH1 {
+	width: 100vw;
+	margin: 0 auto;
+}
+
+.ingH1 h1{
+	width: 100vw;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 1.7rem;
+	margin-bottom: 2vh;
+}
+
+.bouillonBereiding {
+	display: grid;
+	// grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr;
+	width: 34vw;
+	margin-right: 4vw;
+}
+
+
+.boulionIngredienten {
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 5.2rem;
+	// grid-template-rows: 33vh 3vh 2.5vh 2.5vh 2.5vh 2.5vh;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.boulionIngredienItem {
+	display: grid;
+	// display: flex;
+	grid-template-columns: 3vw 30vw;
+	grid-template-rows: 1fr;
+	height: 3.5vh;
+	display: flex;
+	align-items: center;
+}
+
+
+.boulionIngredientenCont h1 {
+	font-size: 1.7rem;
+	margin-bottom: 2vh;
+}
+
+.boulionIngredienImage {
+	width: 1rem;
+	// margin-top: 0.3vh;
+	// background-color: salmon;
+	margin-right: 1vw;
+	display: flex;
+	align-items: center;
+	line-height: 4vh;
+}
+
+.boulionIngredienImage img {
+	width: 1vw;
+}
+
+.boulionIngredienText {
+	// width: 30vw;
+	font-size: 1.2rem;
+	line-height: 4vh;
+	margin-bottom: 1vh;
+	display: flex;
+	align-items: center;
+}
+
+.stap img {
+	border-radius: 10px;
+}
+
+//Bereiding van Borsh
+
+.bereidingVan {
+	display: grid;
+	width: 70vw;
+	margin-left: 15vw;
+	margin-right: 15vw;
+	margin-bottom: 5vh;
+}
+
+.step1Pics {
+	display: flex;
+	justify-content: center;
+}
+
+.bereidingVan span {
+	font-weight: 800;
+}
+
+.bereidingVan p {
+	font-size: 2.2vw;
+}
+
+.stepText {
+	font-size: 1.5rem;
+	line-height: 4.2vh;
+	font-weight: 500;
+	margin: 10vh 0 8vh 0;
+}
+
+.button {
+	margin: 5vh 0;
+}
+
+
+.step2Pics {
+	display: grid;
+	display: flex;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	// background-color: seagreen;
+	justify-content: space-around;
+}
+
+.step2Pics img {
+	width: 15vw;
+}
+
+.step3Pics {
+	display: grid;
+	display: flex;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	// background-color: seagreen;
+	justify-content: space-around;
+}
+
+.step3Pics img {
+	width: 25vw;
+}
+
+.step4Pics {
+	display: grid;
+	display: flex;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	// background-color: seagreen;
+	justify-content: space-around;
+}
+
+.step4Pics img {
+	width: 25vw;
+}
+
+.step5Pics {
+	display: grid;
+	display: flex;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	// background-color: seagreen;
+	justify-content: space-around;
+}
+
+.step5Pics img {
+	width: 15vw;
+}
+
+.step6Pics {
+	display: grid;
+	display: flex;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	// background-color: seagreen;
+	justify-content: space-around;
+}
+
+.step6Pics img {
+	width: 25vw;
+}
+
+.step7Pics {
+	display: grid;
+	display: flex;
+	justify-content: center;
+	// background-color: seagreen;
+}
+
+.step7Pics img {
+	width: 25vw;
+}
+
+.borshEnd {
+	display: grid;
+	// display: flex;
+	grid-template-rows: 6vh 6vh 1fr;
+	grid-template-columns: 1fr;
+	width: 70vw;
+	margin-left: 15vw;
+	margin-right: 15vw;
+	justify-content: center;
+	margin-bottom: 2vw;
+}
+
+.serveer {
+	margin-bottom: 2vh;
+}
+
+.borshEnd img {
+	width: 3vw;
+}
+
+.genietPic {
+	display: grid;
+	display: flex;
+	justify-content: center;
+}
+
+.genietText {
+	display: grid;
+	display: flex;
+	justify-content: center;
+	font-size: 1.2rem;
+}
+
+.genietUkr {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 4vw 1fr;
+	margin-right: 2vw;
+}
+
+.genietNl {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 4vw 1fr;
+}
+
+.genietUkrVlag {
+	display: flex;
+	width: 3vw;
+	align-items: center;
+}
+
+.genietUkrText {
+	display: flex;
+	align-items: center;
+}
+
+.genietNlVlag {
+	display: flex;
+	width: 3vw;
+	align-items: center;
+}
+
+.genietNlText {
+	display: flex;
+	align-items: center;
+}
+
+.serveer {
+	display: grid;
+	// margin-bottom: 4vh;
+}
+
+.serveerHead {
+	display: grid;
+	grid-template-columns: 4vw 1fr;
+	grid-template-rows: 1fr;
+	display: flex;
+	align-items: center;
+	margin-bottom: 1.5vh;
+	margin-top: 2vh;
+	font-size: 1.5rem;
+	font-weight: 800;
+}
+
+.serveerContent {
+	line-height: 4vh;
+	font-size: 1.2rem;
+	margin-bottom: 3vh;
+}
+
+.serveerText {
+	margin-left: 1vw;
+}
+
+
+//FOOTER
+
+@import 'footer';
+
+//MEDIA
+
+@media screen and (max-width: 1000px) {
+}

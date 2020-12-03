@@ -1,0 +1,348 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+.body {
+	font-family: 'Comic Neue', Helvetica, sans-serif;
+	color: black;
+}
+
+html {
+	font-family: 'Comic Neue', Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+@import 'ok_colors';
+
+/// VIDEO
+
+.myVideo {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	z-index: -1;
+}
+
+.myVideo h1 {
+	text-align: center;
+	align-items: center;
+	color: black;
+	// color: white;
+	font-size: 6rem;
+	// text-shadow: slategray;
+	z-index: 3;
+}
+
+.videoContainer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+// VIDEO
+
+@import "menu";
+
+/// LOGO
+.logo {
+	display: grid;
+	grid-row: 1/2;
+	grid-column: 1/2;
+}
+
+.logo img {
+	width: 150px;
+	border-radius: 30px;
+	z-index: 2;
+	position: fixed;
+}
+
+// LOGO
+
+// MENU //
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 6vh;
+	text-align: center;
+	width: 100%;
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 0;
+}
+
+.menu {
+	grid-row: 1/2;
+	grid-column: 2/3;
+	position: relative;
+	border-radius: 7px;
+	top: 0;
+	left: 0;
+	vertical-align: top;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+//    HEADER
+
+/// BODY ///
+
+.mainCont {
+	display: grid;
+	grid-template-columns: 50%, 0%;
+	grid-template-rows: 25vh 1fr;
+	width: 80vw;
+	// background-color: pink;
+	grid-column-gap: 3vw;
+	margin: 0 auto;
+	padding-bottom: 5vh;
+}
+
+.checkReceptenText {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr;
+	grid-row: 1/2;
+	grid-column: 1/2;
+	color: black;
+	text-align: center;
+	// background-color: darkslateblue;
+	// display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 3.5rem;
+	font-family: 'Comic Neue', Helvetica, sans-serif;
+}
+
+.alleRecButton {
+	display: grid;
+	grid-row: 2/3;
+	grid-column: 1/2;
+	padding: 0.7rem;
+    text-decoration: none;
+    flex-shrink: 1;
+    flex-basis: 1.5rem;
+    background-color: rgb(35, 54, 116);
+    border: 1px solid rgb(35, 54, 116);
+    color: white;
+    border-radius: 30px;
+    margin: 8px;
+    font-size: 1.3rem;
+    font-family: 'Comic Neue', Helvetica, sans-serif;
+    font-weight: normal;
+    justify-content: center;
+    align-items: center;
+	font-weight: bolder;
+	width: 28rem;
+	margin: 0 auto;
+}
+
+.alleRecButton:hover {
+    background-color: white;
+    color: rgb(13, 13, 82);
+    transition: 500ms;
+    border: 1px solid rgb(13, 13, 82);
+}
+
+.alleRecButton a {
+	color: white;
+  }
+
+  .alleRecButton a:hover {
+	color: rgb(13, 13, 82);
+  }
+  
+
+// BUTTONS //
+
+@import 'buttons';
+
+// HERO//
+
+section .hero {
+	justify-content: center;
+	align-items: center;
+}
+
+.herotext {
+	grid-row: 1/3;
+	grid-column: 3/4;
+	text-align: center;
+	line-height: 170%;
+	font-family: 'Comic Neue', Helvetica, sans-serif;
+}
+
+.hero {
+	display: grid;
+	grid-row: 1/3;
+	grid-column: 2/3;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: auto 0;
+	align-items: center;
+	position: relative;
+	top: 0;
+}
+
+.hero div {
+	padding: 15px;
+	text-decoration: none;
+	flex-shrink: 1;
+	font-size: 20px;
+	font-weight: normal;
+	justify-content: center;
+}
+
+.herophoto {
+	display: flex;
+	justify-content: center;
+}
+
+.herophoto img {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.herotext {
+	// width: 60vw;
+	margin: 0 auto;
+}
+
+.hero .herowelcome {
+	font-size: 30px;
+	font-family: 'Comic Neue', Helvetica, sans-serif;
+	margin: 0 auto;
+}
+
+#buttonsIndex {
+	margin: 2vh 0;
+	display: grid;
+	grid-row: 3/4;
+	grid-column: 2/3;
+	// background-color: lightslategrey;
+	top: 0;
+}
+
+// text-align: center; // this REAllY centers the text!!!
+
+.heroabout {
+	// background-color: coral;
+	padding-top: 5vh;
+	grid-row: 3/4;
+	grid-column: 1/2;
+	color: black;
+	padding-left: 1vw;
+	grid-template-columns: minmax(min-content, 300px) minmax(40vh) 3vh;
+}
+
+.hero .herotext {
+	font-size: 1.4rem;
+}
+
+.nieuwe_recepten {
+	display: grid;
+	grid-row: 2/4;
+	grid-column: 1/2;
+	grid-template-columns: repeat(auto-fit, 15rem);
+	justify-content: center;
+	width: 55vw;
+	margin: 0 auto;
+}
+
+.nieuwe_recepten img {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	transition: all 0.4s ease-in-out;
+	cursor: pointer;
+	object-fit: contain;
+}
+
+.nieuwe_recepten img:hover {
+	transform: scale(1.1);
+  }
+
+.recListItem {
+	display: grid;
+	width: 100%;
+}
+
+.recListImg {
+	overflow: hidden;
+	margin:0 1rem;
+}
+
+.recListImg img{
+	width: 100%;
+	overflow: hidden;
+	transition: all 0.4s ease-in-out;
+	cursor: pointer;
+object-fit: contain;
+}
+
+.recListItem h2 {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	font-family: 'Comic Neue', Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 1.2rem;
+	line-height: 1.4rem;
+	text-align: center;
+	margin-top: 1.5rem;
+}
+
+// // FOOTER
+
+@import "footer";
+
+
+//// Media queries 
+
+@media screen and (max-width: 600px) { 
+
+
+	.mainCont {
+	display: grid;
+		background-color: rgb(13, 13, 82);
+		color: whitesmoke;
+		grid-template-columns: 100vw;
+		grid-template-rows: 1fr;
+		width: 100%;
+		padding-bottom: 3vh;
+	}
+
+	.myVideo {
+		display: none;
+	}
+
+	.grid-container {
+		display: none;
+	}
+
+	.checkReceptenText {
+		display: none;
+	}
+
+}
+
+

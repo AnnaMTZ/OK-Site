@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Comic Neue', Helvetica, sans-serif;
+}
+
+html {
+    font-family: 'Comic Neue', Helvetica, sans-serif;
+    font-size: 16px;
+  }
+
+// BUTTONS //
+
+@import 'ok_colors';
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Comic Neue', Helvetica, sans-serif;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Comic Neue', Helvetica, sans-serif;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+
+.buttonsWrap {
+    // margin-top: 2vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 5;
+}
+
+.buttons a {
+    padding: 0.7rem;
+    text-decoration: none;
+    flex-shrink: 1;
+    flex-basis: 1.5rem;
+    background-color: $okBlue;
+    border: 1px solid $okBlue;
+    color: white;
+    border-radius: 30px;
+    margin: 8px;
+    font-size: 1.3rem;
+    font-family: 'Comic Neue', Helvetica, sans-serif;
+    font-weight: normal;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    transition: 0.7s;
+}
+
+.button a {
+    padding: 1.3rem;
+    text-decoration: none;
+    flex-shrink: 1;
+    background-color: $ctaButton;
+    border: 1px solid $ctaButton;
+    color: black;
+    border-radius: 30px;
+    margin: 8px;
+    font-size: 1.8rem;
+    font-family: 'Comic Neue', Helvetica, sans-serif;
+    font-weight: normal;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+}
+
+.buttons a:hover {
+    background-color: white;
+    color: $okBlue;
+    transition: 700ms;
+    border: 1px solid $okBlue;
+}
+
+.button a:hover {
+    background-color: $ctaHover;
+    color: black;
+    border: 1px solid #BFB526;
+}
