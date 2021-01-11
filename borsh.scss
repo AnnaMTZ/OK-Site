@@ -13,6 +13,7 @@
 
 html {
 	font-family: 'Comic Neue', Helvetica, sans-serif;
+	scroll-behavior: smooth;
 	font-size: 16px;
   }
 
@@ -31,6 +32,31 @@ html {
 .menuHeader {
 	position: fixed;
 }
+//Scroll to top
+
+.to-top {
+    background: white;
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: dimgrey;
+    opacity: 0;
+    pointer-events: none;
+	transition: all .4s;
+	font-size: 2.5rem;
+    }
+    
+    .to-top.active {
+        bottom: 2rem;
+        pointer-events: auto;
+        opacity: 1;
+    }
 
 // ABOUT BORSH
 
@@ -98,7 +124,7 @@ html {
 	text-decoration: none;
 	flex-shrink: 1;
 	flex-basis: 30px;
-	color: #0b1e59;
+	// color: #0b1e59;
 	margin-right: auto;
 	transition: all 0.3s ease 0s; // makes the menu appear nicely
 	top: 0;
@@ -113,7 +139,6 @@ html {
 .AboutText {
 	width: 80vw;
 	margin: 7vh auto;
-	text-align: center;
 	line-height: 5vh;
 	font-size: 1.8rem;
 }

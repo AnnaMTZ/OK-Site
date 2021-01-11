@@ -6,6 +6,7 @@
   <title class="words">Oekrainse keuken - Borsjtsj</title>
   <meta http-equiv="X-UA-Compatible content=" IE="edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/dd41cbb229.js" crossorigin="anonymous"></script>
   <title class="words">Borsjtsj</title>
   <meta name="keyword" content="borsjtsj borsh oekrainse, keuken, koken, lekker, recepten, eten" />
   <meta name="description" content="Borsjtsj, Oekrainse keuken recepten" />
@@ -18,30 +19,57 @@
 </head>
 
 <body>
+  <a href="#" class="to-top">
+    <i class="fas fa-chevron-up"></i>
+</a>
 
-    <div class="imgCont">
+    <div class="imgCont myVideo jumbotronRecMedia13">
       
       <img src="home_recepten/borsh.jpg"><div class="imgOverlay"></div>
 </div>
 
-  <header class="menuHeader">
-    <div class="logo"><img src="oklogo.jpg"><a href="#"></a></div>
-      <nav class="only">
-        <a href="index.html">HOME</a>
-        <a class="active" href="recepten.html">RECEPTEN</a>
-        <a href="#">WEETJES</a>
-        <a href="#">ABOUT</a>
-        <a href="#">CONTACT</a>
-        <a class="zoek"><input type="text" placeholder="ZOEKEN....."></a>
-      </nav>
-  </header>
+<ul class="nav-links">
+  <li><a href="#">HOME</a></li>
+  <li><a href="recepten.html" target="_blank">RECEPTEN</a></li>
+  <li><a href="weetjes.html" target="_blank">WEETJES</a></li>
+  <li><a href="about.html" target="_blank">ABOUT</a></li>
+  <li><a href="contact.html" target="_blank">CONTACT</a></li>
+</ul>
 
-    <div class="titleBlack">
+<header class="menuHeader">
+  <div class="menu-container">
+    <div class="only">
+      <a class="logo"><img src="oklogo.jpg"></a>
+      <div class="toLeft">
+      <a class="active" href="#" class="nav__link">HOME</a>
+      <a href="recepten.html" target="_blank" class="nav__link">RECEPTEN</a>
+      <a href="weetjes.html" target="_blank" class="nav__link">WEETJES</a>
+      <a href="about.html" target="_blank" class="nav__link">ABOUT</a>
+      <a href="contact.html" target="_blank" class="nav__link">CONTACT</a>
+      <!-- <a class="zoek nav__link"><input type="text" placeholder="ZOEKEN....."></a> -->
+    </div>
+    </div>
+  </div>
+</header>
+
+    <div class="titleWhite">
       <p>Borsjtsj
         <br>- de koning van de Oekraïense keuken!</p>
     </div>
-    <div class="button"><a href="index.html" target="_blank">Kijn naar de nieuwste recepten!</a></div>
+    <div class="button"><a href="index.html" target="_blank">Kijk naar de nieuwste recepten!</a></div>
 <article class="AboutText">
+  <section class="begin">
+    <div class="genietUkr">
+      <div class="genietUkrVlag"><img src="borsh_icons/headers_icons/UA flag.svg" alt=""></div>
+      <div class="genietUkrText"> Борщ [Borsch]​</div>
+    </div>
+    <br>
+    <div class="genietNl">
+      <div class="genietNlVlag"><img src="borsh_icons/headers_icons/Dutch flag.svg" alt=""></div>
+      <div class="genietNlText">Borsjtsj</div>
+    </div>
+</section class="AboutText">
+<br>
     Borsjtsj is een soort van rode bietensoep​, maar we noemen ​het in Oekraïne nooit een soep, gek​ hè?
     Dit gerecht
     is oorspronkelijk Oekraïens en bekend over de hele wereld.<br><br>
@@ -408,6 +436,20 @@
       <a href="#recepten" target="_blank">Contacts</a>
     </div>
     </footer>
+
+    <script src='mostpages.js'></script>
+    <script src='index.js'></script>
+
+    <script>
+  
+      window.addEventListener('scroll', function () {
+        const parallaxRec1 = document.querySelector('.jumbotronRecMedia13');
+        let scrollRecPosition1 = window.pageYOffset;
+        parallaxRec1.style.transform = 'translateY(' + scrollRecPosition1 * -.4 + 'px)';
+    });
+    
+    </script>
+
 </body>
 </html>
 

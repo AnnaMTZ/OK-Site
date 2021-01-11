@@ -14,6 +14,7 @@
 html {
 	font-family: 'Comic Neue', Helvetica, sans-serif;
 	font-size: 16px;
+	scroll-behavior: smooth;
   }
 
 // MENU //
@@ -28,7 +29,40 @@ html {
 	position: fixed;
 }
 
-// ABOUT BORSH
+// ABOUT
+
+//Scroll to top
+
+
+.to-top {
+    background: white;
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: dimgrey;
+    opacity: 0;
+    pointer-events: none;
+	transition: all .4s;
+	font-size: 2.5rem;
+	z-index: 10;
+    }
+    
+    .to-top.active {
+        bottom: 2rem;
+        pointer-events: auto;
+        opacity: 1;
+	}
+	
+	
+	
+
+	// Body
 
 .titleWhite {
 	width: 80vw;
@@ -107,42 +141,23 @@ html {
 	background: rgba(254, 254, 255, 0.2);
 }
 
-.only {
-	grid-row: 1/2;
-	grid-column: 2/3;
-	position: relative;
-	border-radius: 7px;
-	top: 0;
-	left: 0;
-	vertical-align: top;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.only a {
-	text-decoration: none;
-	flex-shrink: 1;
-	flex-basis: 30px;
-	color: #0b1e59;
-	margin-right: auto;
-	transition: all 0.3s ease 0s; // makes the menu appear nicely
-	top: 0;
-	left: 0;
-	vertical-align: top;
-	font-family: 'Comic Neue', Helvetica, sans-serif;
-	font-weight: bold;
-}
-
 /// main body
 
 .AboutText {
 	width: 80vw;
 	margin: 7vh auto;
-	text-align: center;
+	// text-align: center;
 	line-height: 5.5vh;
 	font-size: 1.8rem;
 	font-family: 'Comic Neue', Helvetica, sans-serif;
+}
+
+.serveerContent a {
+	transition: 500ms;
+}
+
+.serveerContent a:hover {
+color: $ctaHover;
 }
 
 .HeadText {
@@ -250,9 +265,9 @@ justify-content: center;
 	text-align: center;
 }
 
-.ingredienItem {
-	height: 6vh;
-}
+// .ingredienItem {
+// 	height: 6vh;
+// }
 
 .stap img {
 	border-radius: 10px;
@@ -383,6 +398,19 @@ width: 70vw;
 	font-family: 'Comic Neue', Helvetica, sans-serif;
 }
 
+
+.begin {
+	display: grid;
+	// display: flex;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr;
+	width: 80vw;
+	justify-content: center;
+	font-family: 'Comic Neue', Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+
 .serveer {
 	margin-bottom: 2vh;
 }
@@ -390,6 +418,12 @@ width: 70vw;
 .end img {
 	width: 3vw;
 }
+
+.begin img {
+	width: 3vw;
+}
+
+
 
 .genietPic {
 	display: grid;

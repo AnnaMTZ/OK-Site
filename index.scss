@@ -18,10 +18,38 @@
 
 html {
 	font-family: 'Comic Neue', Helvetica, sans-serif;
+	scroll-behavior: smooth;
 	font-size: 16px;
 }
 
 @import 'ok_colors';
+
+
+//Scroll to top
+
+.to-top {
+	background: white;
+	position: fixed;
+	bottom: 1rem;
+	right: 2rem;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: dimgrey;
+	opacity: 0;
+	pointer-events: none;
+  transition: all .4s;
+  font-size: 2.5rem;
+	}
+	
+	.to-top.active {
+		bottom: 2rem;
+		pointer-events: auto;
+		opacity: 1;
+  }
 
 /// VIDEO
 
@@ -39,11 +67,20 @@ html {
 .myVideo h1 {
 	text-align: center;
 	align-items: center;
-	color: black;
+	color: white;
+	// color: $ctaHover;
 	// color: white;
 	font-size: 6rem;
 	// text-shadow: slategray;
 	z-index: 3;
+	font-family: 'Comic Neue', Helvetica, sans-serif;
+	font-weight: bold;
+	width: 80vw;
+	text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+	display: flex;
+	justify-content: center;
+  font-family: 'Comic Neue', Helvetica, sans-serif;
+  line-height: 8rem;
 }
 
 .videoContainer {
@@ -52,6 +89,9 @@ html {
 	left: 0;
 	width: 100%;
 }
+
+
+
 
 // VIDEO
 
@@ -64,28 +104,14 @@ html {
 	grid-column: 1/2;
 }
 
-.logo img {
-	width: 150px;
-	border-radius: 30px;
-	z-index: 2;
-	position: fixed;
-}
+
 
 // LOGO
 
 // MENU //
 
-.grid-container {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 6vh;
-	text-align: center;
-	width: 100%;
-	position: fixed;
-	z-index: 2;
-	top: 0;
-	left: 0;
-}
+
+
 
 .menu {
 	grid-row: 1/2;
@@ -131,6 +157,8 @@ html {
 	font-family: 'Comic Neue', Helvetica, sans-serif;
 }
 
+
+	
 .alleRecButton {
 	display: grid;
 	grid-row: 2/3;
@@ -191,7 +219,7 @@ section .hero {
 
 .hero {
 	display: grid;
-	grid-row: 1/3;
+	// grid-row: 1/3;
 	grid-column: 2/3;
 	display: flex;
 	flex-direction: column;
@@ -200,7 +228,7 @@ section .hero {
 	margin: auto 0;
 	align-items: center;
 	position: relative;
-	top: 0;
+	top: 7vh;
 }
 
 .hero div {
@@ -222,6 +250,12 @@ section .hero {
 	margin: 0 auto;
 }
 
+
+
+// .menuLightBg {
+// 	background-color: pink;
+// }
+
 .herotext {
 	// width: 60vw;
 	margin: 0 auto;
@@ -233,13 +267,14 @@ section .hero {
 	margin: 0 auto;
 }
 
+
 #buttonsIndex {
-	margin: 2vh 0;
+	margin: 8vh 2vw;
 	display: grid;
 	grid-row: 3/4;
 	grid-column: 2/3;
-	// background-color: lightslategrey;
 	top: 0;
+	z-index: 1;
 }
 
 // text-align: center; // this REAllY centers the text!!!
@@ -311,6 +346,43 @@ object-fit: contain;
 	margin-top: 1.5rem;
 }
 
+.toTop {
+background:black;
+position: fixed;
+bottom: 1rem;
+right: 2rem;
+width: 3rem;
+height: 3rem;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: black;
+opacity: 0;
+pointer-events: none;
+transition: all .4s;
+position: relative;
+z-index: 1000;
+}
+
+.toTop.active {
+	bottom: 2rem;
+	pointer-events: auto;
+	opacity: 1;
+}
+
+.heroMob {
+	display: none;
+}
+
+.heroMobwelcome {
+	display: none;
+}
+
+.mobLogo {
+	display: none;
+}
+
 // // FOOTER
 
 @import "footer";
@@ -321,25 +393,115 @@ object-fit: contain;
 @media screen and (max-width: 600px) { 
 
 
+	.heroMobtext {
+		grid-row: 1/3;
+		grid-column: 3/4;
+		text-align: center;
+		line-height: 170%;
+		font-family: 'Comic Neue', Helvetica, sans-serif;
+		font-size: 1.5rem;
+	}
+	
+	.heroMob div {
+		text-decoration: none;
+		flex-shrink: 1;
+		font-weight: normal;
+		// justify-content: center;
+
+	}
+	
+	.heroMobphoto {
+		display: flex;
+		// justify-content: center;
+	}
+	
+	.heroMobphoto img {
+		width: 100vw;
+		// margin: 0 auto;
+	}
+	
+	.heroMob {
+		display: grid;
+		// grid-row: 1/3;
+		// grid-column: 2/3;
+		display: flex;
+		flex-direction: column;
+		// align-items: center;
+		// justify-content: center;
+		// margin: auto 0;
+		// align-items: center;
+		position: absolute;
+		z-index: -1;
+		background-color: #000D21;
+		color: whitesmoke;
+		height: 101vh;
+	}
+
+	.heroMobwelcome {
+		display: flex;
+		justify-content: center;
+		font-weight: bolder;
+		font-size: 2rem;
+		font-family: 'Comic Neue', Helvetica, sans-serif;
+		margin-bottom: 4vh;
+	}
+
+	.naarBeneden {
+		color: $ctaMobButton;
+		font-size: 3rem;
+	}
+
 	.mainCont {
 	display: grid;
-		background-color: rgb(13, 13, 82);
+	margin-top: 100vh;
+		background-color: #000D21;
 		color: whitesmoke;
 		grid-template-columns: 100vw;
 		grid-template-rows: 1fr;
 		width: 100%;
 		padding-bottom: 3vh;
+		position: absolute;
+		z-index: -1;
+	}
+
+	.mobLogo {
+display: block;
+position: absolute;
+top: 1rem;
+left: 1rem;
+	}
+
+	.mobLogo img {
+		width: 22vw;
+		z-index: 10;
+		border-radius: 85px;
+	}
+	
+	.hero {
+		display: none;
 	}
 
 	.myVideo {
 		display: none;
 	}
 
-	.grid-container {
+	.menu-container {
 		display: none;
 	}
 
 	.checkReceptenText {
+		display: none;
+	}
+
+	.footerCont {
+		display: none;
+	}
+
+	.mediaFooterCont {
+		display: none;
+	}
+
+	.mobileFooterText {
 		display: none;
 	}
 

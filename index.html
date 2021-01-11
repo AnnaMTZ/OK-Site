@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <title class="words">Oekrainse recepten </title>
+  <script src="https://kit.fontawesome.com/dd41cbb229.js" crossorigin="anonymous"></script>
   <meta http-equiv="X-UA-Compatible content=" IE="edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title class="words">HOME</title>
   <meta name="keyword" content="oekrainse, keuken, koken, lekker, recepten, eten" />
-  <meta name="description" content="Oekrainse keuken recepten" />
+  <meta name="description" content="Oekrainse keuken" />
   <meta name="author" content="Irina Solodovnikova" />
   <link rel="stylesheet" href="ok_styles/index.css" />
   <link rel="stylesheet" href="ok_styles/reset.css" />
@@ -16,52 +17,61 @@
 <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet"> 
 </head>
 
-<!-- to add vertical menu oscroll
-back to the top  -->
+
+<!-- back to the top -->
 
 <body>
- 
+  <a href="#" class="to-top">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
   <div class="myVideo">
-    <!-- <h1>Iryna’s favoriete gerechten: <br><br> lekker, duurzaam en authentiek!</h1> -->
+    <h1>Iryna’s favoriete gerechten: <br><br> lekker, duurzaam en authentiek!</h1>
     <div class="videoContainer">
       <div class="colorOverlay"></div>
-      <img src="ok_jumbotron1.jpg" title="Your browser does not support the video tag">
-  <!-- <video autoplay muted loop> -->
-    <!-- <source src="haring_salade.mp4" type="video/mp4"></video> -->
+      <!-- <img src="ok_jumbotron1.jpg" class='jumbotronMedia' title="Your browser does not support the video tag"> -->
+
+ <video autoplay muted loop> 
+   <source src="draft_video.mp4" type="video/mp4"></video>
    
-      <!-- /// from stackoverflow - to add different formats and fallbacks -->
-
-      <!-- <video controls="controls" autoplay="autoplay" 
-      poster="#" width="212" height="160">
-          <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4" />
-          <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.webm" type="video/webm" />
-          <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv" type="video/ogg" />
-          <object type="application/x-shockwave-flash" data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" 
-          width="212" height="160">
-              <param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" />
-              <param name="allowFullScreen" value="true" />
-              <param name="wmode" value="transparent" />
-              <param name="flashVars" value="config={'playlist':['http%3A%2F%2Fsandbox.thewikies.com%2Fvfe-generator%2Fimages%2Fbig-buck-bunny_poster.jpg',{'url':'http%3A%2F%2Fclips.vorwaerts-gmbh.de%2Fbig_buck_bunny.mp4','autoPlay':true}]}" />
-              <img alt="Big Buck Bunny" src="http://sandbox.thewikies.com/vfe-generator/images/big-buck-bunny_poster.jpg" width="640" height="360" title="No video playback capabilities, please download the video below" />
-          </object>
-      </video> -->
-
-
   </video>
 </div>
 </div>
 
-      <div class="grid-container">
-        <a class="logo"><img src="oklogo.jpg"></a>
+<section class="mobNavBar">
+
+<ul class="hamburger">
+  <li class="line"></li>
+  <li class="line"></li>
+  <li class="line"></li>
+</ul>
+
+
+<ul class="nav-links">
+  <li><a href="#">HOME</a></li>
+  <li><a href="recepten.html" target="_blank">RECEPTEN</a></li>
+  <li><a href="weetjes.html" target="_blank">WEETJES</a></li>
+  <li><a href="about.html" target="_blank">ABOUT</a></li>
+  <li><a href="contact.html" target="_blank">CONTACT</a></li>
+</ul>
+
+</section>
+
+
+      <div class="menu-container">
           <div class="only">
-            <a class="active" href="#">HOME</a>
-            <a href="recepten.html" target="_blank">RECEPTEN</a>
-            <a href="#">WEETJES</a>
-            <a href="#">ABOUT</a>
-            <a href="#">CONTACT</a>
-            <a class="zoek"><input type="text" placeholder="ZOEKEN....."></a>
+            <a class="logo"><img src="oklogo.jpg"></a>
+            <div class="toLeft">
+            <a class="active" href="#" class="nav__link">HOME</a>
+            <a href="recepten.html" target="_blank" class="nav__link">RECEPTEN</a>
+            <a href="weetjes.html" target="_blank" class="nav__link">WEETJES</a>
+            <a href="about.html" target="_blank" class="nav__link">ABOUT</a>
+            <a href="contact.html" target="_blank" class="nav__link">CONTACT</a>
+            <!-- <a class="zoek nav__link"><input type="text" placeholder="ZOEKEN....."></a> -->
+          </div>
           </div>
         </div>
+
 
   <main class='mainCont'>
     <!-- <section class="buttonsWrap">
@@ -70,7 +80,7 @@ back to the top  -->
     </section> -->
 
     <div class="checkReceptenText">
-      <p>Check de nieuwe recepten!</p>
+      <p>Check mijn nieuwe recepten!</p>
       <button class='alleRecButton'><a href="recepten.html" target="_blank">Hier zijn alle recepten op categorie</a>
         </button>
       </div>
@@ -92,21 +102,32 @@ back to the top  -->
           Groetjes, Iryna.</div>
    
       </article>
-    </section>
 
-    <section class="buttonsWrap" id="buttonsIndex">
-      <div class="buttons">
-        <a href="#">Gezond</a>
-        <a href="#">Seizoen</a>
-        <a href="#">Oekraïens</a>
-        <a href="#">Salade</a>
-        <a href="#">Veggie</a>
-        <a href="#">Snack</a>
-        <a href="#">Groente</a>
-        <a href="#">Vis</a>
-        <a href="#">Vlees</a>
-        <a href="#">Gevogelte</a>
-</section>
+      <section class="buttonsWrap" id="buttonsIndex">
+        <div class="buttons">
+          <a href="#">Voorgerecht</a>
+          <a href="#">Bijgerecht</a>
+          <a href="#">Hoofdgerecht</a>
+          <a href="#">Nagerecht</a>
+          <a href="#">Zoetigheden</a>
+          <a href="#">Gezond</a>
+          <a href="#">Oekraïens</a>
+          <a href="#">Veggie</a>
+          <a href="#">Vis</a>
+          <a href="#">Vlees</a>
+          <a href="#">Groente</a>
+          <a href="#">Drankjes</a>
+          <a href="#">Ontbijt</a>
+          <a href="#">Lunch</a>
+          <a href="#">Diner</a>
+          <a href="#">Tussendoortje</a>
+          <a href="#">Hapje</a>
+          <a href="#">Oven</a>
+          <a href="#">Feestelijk</a>
+          <!-- <a href="#">Seizoen</a> -->
+        
+  </section>
+    </section>
 
     <!-- <section class='checkRecepten'>Check de nieuwe recepren!</section> -->
     <ul class="nieuwe_recepten">
@@ -247,10 +268,31 @@ back to the top  -->
 </li>
 
 <li class='recListItem'>
-  <h2>Varya Hoetsoelska</h2>
-  <div class="recListImg"><a href="varya.html" target="_blank"><img src="home_recepten/varya_hoetsoelska1.jpg"></a></div>
-  </li>
+<h2>Varya Hoetsoelska</h2>
+<div class="recListImg"><a href="varya.html" target="_blank"><img src="home_recepten/varya_hoetsoelska1.jpg"></a></div>
+</li>
   
+<li class='recListItem'>
+<h2>Gevulde paprika's</h2>
+<div class="recListImg"><a href="gevuld_paprika.html" target="_blank"><img src="home_recepten/gevulde_paprika.jpg"></a></div>
+</li>  
+
+<li class='recListItem'>
+<h2>Salade Bedekte haring</h2>
+<div class="recListImg"><a href="shuba.html" target="_blank"><img src="home_recepten/shuba.jpg"></a></div>
+</li> 
+
+<li class='recListItem'>
+<h2>Gebakken aardappels met haring</h2>
+<div class="recListImg"><a href="aardappels_met_haring.html" target="_blank"><img src="home_recepten/hapje_aardappelen.jpg"></a></div>
+</li> 
+  
+<li class='recListItem'>
+  <h2>Koetja</h2>
+  <div class="recListImg"><a href="koetja.html" target="_blank"><img src="home_recepten/koetja1.jpg"></a></div>
+  </li> 
+    
+
 <!-- <li class='recListItem'>
 <h2>Lvivs’ki syrnyky</h2>
 <div class="recListImg"><a href="#" target="_blank"><img src="home_recepten/"></a></div>
@@ -258,7 +300,43 @@ back to the top  -->
 
     </ul>
     </section>
+
   </main>
+
+<!-- /// Mobile layout -->
+
+
+<section class="heroMob">
+  <div class="mobLogo"><img src="oklogo.jpg" alt=""></div>
+
+  <br><br>
+  <!-- <div class="heroMobphoto"><img src="hero.jpg"></div> -->
+  <article>
+    <div class="heroMobwelcome">WELCOME!</div>
+    <div class="heroMobtext">
+      Ben je benieuwd hoe de Oekraïense keuken smaakt of wil je iets nieuw​s uitproberen? <br>
+      Dan ​ben je hier aan het juiste adres!
+      <br><br>
+      Hier vind je authentieke recepten uit ​de Oekraïense keuken en recepten die ik heb aangepast
+      om je gerecht zo gezond ​mogelijk te maken, maar toch lekker en simpel.
+      <br><br>
+      Ik hoop dat je ​hier iets voor jezelf kan vinden wat je vaker gaat koken en uiteindelijk
+      ook op deze heerlijke keuken verlief​d wordt ​net zoals ik​!
+      <br><br>
+Kijk naar mijn nieuwe recepten beneden!
+
+      <br><br>
+      Groetjes, Iryna.
+      <br><br>
+     <i class="fas fa-chevron-down naarBeneden"></i>
+    </div>
+   
+
+  </article>
+  
+</section>
+
+
 
   <!-- //FOOTER -->
   <footer>
@@ -334,6 +412,9 @@ back to the top  -->
   </div>
   </footer>
 
+  <!-- <script src="index.js"></script> -->
+  <script src='index.js'></script>
+  <script src='mostpages.js'></script>
 </body>
 
 </html>

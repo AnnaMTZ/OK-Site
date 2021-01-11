@@ -4,12 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <title class="words">Oekrainse keuken - recepten </title>
+  <script src="https://kit.fontawesome.com/dd41cbb229.js" crossorigin="anonymous"></script>
   <meta http-equiv="X-UA-Compatible content=" IE="edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title class="words">RECEPTEN</title>
   <meta name="keyword" content="oekrainse, keuken, koken, lekker, recepten, eten" />
-  <meta name="description" content="Oekrainse keuken recepten" />
+  <meta name="description" content="Oekrainse keuken - recepten" />
   <meta name="author" content="Irina Solodovnikova" />
+  <link rel="stylesheet" href="ok_styles/reset.css" />
   <link rel="stylesheet" href="ok_styles/recepten.css" />
   <link rel="icon" href="OK_favicon.jpg" type="image/x-icon" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,18 +19,34 @@
 </head>
 
 <body>
+  <a href="#" class="to-top">
+    <i class="fas fa-chevron-up"></i>
+</a>
+<ul class="nav-links">
+  <li><a href="#">HOME</a></li>
+  <li><a href="recepten.html" target="_blank">RECEPTEN</a></li>
+  <li><a href="weetjes.html" target="_blank">WEETJES</a></li>
+  <li><a href="about.html" target="_blank">ABOUT</a></li>
+  <li><a href="contact.html" target="_blank">CONTACT</a></li>
+</ul>
 
-    <header class="menuHeader">
-      <div class="logo"><img src="oklogo.jpg"><a href="#"></a></div>
-        <nav class="only">
-          <a href="index.html">HOME</a>
-          <a class="active" href="#">RECEPTEN</a>
-          <a href="#">WEETJES</a>
-          <a href="#">ABOUT</a>
-          <a href="#">CONTACT</a>
-          <a class="zoek"><input type="text" placeholder="ZOEKEN....."></a>
-        </nav>
-  </header>
+<header class="menuHeader">
+  <div class="menu-container">
+    <div class="only">
+      <a class="logo"><img src="oklogo.jpg"></a>
+      <div class="toLeft">
+      <a class="active" href="#" class="nav__link">HOME</a>
+      <a href="recepten.html" target="_blank" class="nav__link">RECEPTEN</a>
+      <a href="weetjes.html" target="_blank" class="nav__link">WEETJES</a>
+      <a href="about.html" target="_blank" class="nav__link">ABOUT</a>
+      <a href="contact.html" target="_blank" class="nav__link">CONTACT</a>
+      <!-- <a class="zoek nav__link"><input type="text" placeholder="ZOEKEN....."></a> -->
+    </div>
+    </div>
+  </div>
+</header>
+
+
 
   <main>
     <!-- <section class="buttons">
@@ -56,7 +74,6 @@
           </div>
         </section>
       
-      
       </section>
 
       <!-- 1 recepte - Saladen -->
@@ -68,17 +85,12 @@
           <div class="recHeaderText" id="recHeaderText1">Salades</div>
         </div>
 
-        <div class="recimages">
-          
-            <div class="img-container">
-              <div class="imgItself">
-            <a href="aubergine_spread.html" target="_blank">
-              <img src="recepten/salades/aubergine.jpg"/>
-              <div class="recPicText">Aubergine spread</div>
-            </div>
-            </a>
-          </div>
+        <div class="slideshow-container">
 
+          <!-- Full-width images with number and caption text -->
+   
+          <div class="mySlides8 fade">
+            <div class="recimages">
         
           <div class="img-container">
             <div class="imgItself">
@@ -88,101 +100,134 @@
           </div>
           </a>
         </div>
-
+    
+      
+          <div class="img-container">
+            <div class="imgItself">
+          <a href="varya.html" target="_blank">
+            <img src="recepten/salades/varya_hoetsoelska1.jpg"/>
+            <div class="recPicText">Varya Hoetsoelska</div>
+          </div>
+          </a>
+        </div>
+      
         <div class="img-container">
           <div class="imgItself">
-        <a href="gestoofde_witte_kool.html" target="_blank">
-          <img src="recepten/salades/kool.jpg"/>
-          <div class="recPicText">Gestoofde witte kool</div>
+        <a href="vinegret.html" target="_blank">
+          <img src="recepten/salades/vinegret.jpg"/>
+          <div class="recPicText">Salade Vinegret</div>
         </div>
         </a>
       </div>
-
+      
+          
       <div class="img-container">
         <div class="imgItself">
-      <a href="aardappels_salade.html" target="_blank">
-        <img src="recepten/salades/aardappelen.jpg"/>
-        <div class="recPicText">Nieuwe oogst aardappels met salade met radijs</div>
+      <a href="shuba.html" target="_blank">
+        <img src="recepten/salades/shuba.jpg"/>
+        <div class="recPicText">Salade Bedekte haring</div>
       </div>
       </a>
     </div>
 
-
-    <!-- <div class="img-container">
-      <div class="imgItself">
-    <a href="varya.html" target="_blank">
-      <img src="recepten/salades/varya_hoetsoelska1.jpg"/>
-      <div class="recPicText">Varya Hoetsoelska</div>
+      <!-- </div> -->
+   
+      <!-- <div class="mySlides fade"></div> -->
+        
+        <!-- </div> -->
+          <!-- Next and previous buttons -->
+          <!-- <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
+          <div class="next" onclick="plusSlides(1)">&#10095;</div>
+      
+        <br> -->
+        
+        <!-- The dots/circles -->
+      <!-- <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div> 
+      </div> -->
     </div>
-    </a>
+  </div>
+</div>
+      </section>
+
+
+<!-- Soupen en borsh -->
+
+<section class="recItemCont1 recItemCont">
+
+  <div class="recHeader">
+    <div class="recLogo"><img src="rec_icons/soupf.png"><a href="#"></a></div>
+    <div class="recHeaderText" id="recHeaderText1">Soepen en borsjtsj</div>
   </div>
 
+  <div class="slideshow-container">
+
+ <div class="mySlides7 fade">
+  <div class="recimages"> 
   <div class="img-container">
     <div class="imgItself">
-  <a href="vinegret.html" target="_blank">
-    <img src="recepten/salades/vinegret.jpg"/>
-    <div class="recPicText">Salade Vinegret</div>
+  <a href="borsh.html" target="_blank">
+    <img src="recepten/soepen/borsh.jpg"/>
+    <div class="recPicText">Borsjtsj</div>
   </div>
   </a>
 </div>
 
 <div class="img-container">
   <div class="imgItself">
-<a href="koreaanse_worteltjes.html" target="_blank">
-  <img src="recepten/salades/koreaanse_worteltjes.jpg"/>
-  <div class="recPicText">Koreaanse worteltjes</div>
+<a href="okroshka.html" target="_blank">
+  <img src="recepten/soepen/okroshka.jpg"/>
+  <div class="recPicText">Okroshka</div>
 </div>
 </a>
-</div> -->
-  
-        </div>
-      </section>
-
-      <section class="recItemCont1 recItemCont">
-
-        <div class="recHeader">
-          <div class="recLogo"><img src="rec_icons/soupf.png"><a href="#"></a></div>
-          <div class="recHeaderText" id="recHeaderText1">Soepen en borsjtsj</div>
-        </div>
-
-        <div class="recimages"> 
-        <div class="img-container">
-          <div class="imgItself">
-        <a href="borsh.html" target="_blank">
-          <img src="recepten/soepen/borsh.jpg"/>
-          <div class="recPicText">Borsjtsj</div>
-        </div>
-        </a>
-      </div>
-
-      <div class="img-container">
-        <div class="imgItself">
-      <a href="okroshka.html" target="_blank">
-        <img src="recepten/soepen/okroshka.jpg"/>
-        <div class="recPicText">Okroshka</div>
-      </div>
-      </a>
-    </div>
-
-    <div class="img-container">
-      <div class="imgItself">
-    <a href="holodnyk.html" target="_blank">
-      <img src="recepten/soepen/holodnyk.jpg"/>
-      <div class="recPicText">Holodnyk</div>
-    </div>
-    </a>
-  </div>
-
-  <div class="img-container">
-    <div class="imgItself">
-  <a href="kippensoep .html" target="_blank">
-    <img src="recepten/soepen/kippensoep.jpg"/>
-    <div class="recPicText">Kippensoep</div>
-  </div>
-  </a>
 </div>
-        </div>
-      </section>
+
+<div class="img-container">
+<div class="imgItself">
+<a href="holodnyk.html" target="_blank">
+<img src="recepten/soepen/holodnyk.jpg"/>
+<div class="recPicText">Holodnyk</div>
+</div>
+</a>
+</div>
+
+<div class="img-container">
+<div class="imgItself">
+<a href="kippensoep .html" target="_blank">
+<img src="recepten/soepen/kippensoep.jpg"/>
+<div class="recPicText">Kippensoep</div>
+</div>
+</a>
+</div>
+  </div>
+
+       
+<!-- </div>
+
+Next and previous buttons -->
+<!-- <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
+<div class="next" onclick="plusSlides(1)">&#10095;</div>
+
+<br> -->
+
+<!-- The dots/circles -->
+<!-- <div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<span class="dot" onclick="currentSlide(3)"></span>
+</div>  -->
+
+</div>
+
+
+  </div>
+</div>
+</div>
+</section>
+
 
       <!-- 3 recepte - Voor - en bijgerechten -->
 
@@ -192,9 +237,32 @@
           <div class="recHeaderText" id="recHeaderText2">Voor-en bijgerechten</div>
         </div>
 
-        <div class="recimages">
 
+          <div class="slideshow-container">
 
+            <!-- Full-width images with number and caption text -->
+
+          <div class="mySlides fade">
+            <div class="recimages">
+
+              <div class="img-container">
+                <div class="imgItself">
+              <a href="aubergine_spread.html" target="_blank">
+                <img src="recepten/voor_en_bij/aubergine.jpg"/>
+                <div class="recPicText">Aubergine spread</div>
+              </div>
+              </a>
+            </div>
+
+            <div class="img-container">
+              <div class="imgItself">
+            <a href="gestoofde_witte_kool.html" target="_blank">
+              <img src="recepten/voor_en_bij/kool.jpg"/>
+              <div class="recPicText">Gestoofde witte kool</div>
+            </div>
+            </a>
+          </div>
+     
           <div class="img-container">
             <div class="imgItself">
           <a href="gevuld_ei.html" target="_blank">
@@ -206,33 +274,61 @@
 
         <div class="img-container">
           <div class="imgItself">
-        <a href="deroeny.html" target="_blank">
-          <img src="recepten/voor_en_bij/deroeny.jpg"/>
-          <div class="recPicText">Aardappelpannenkoekjes</div>
+        <a href="koreaanse_worteltjes.html" target="_blank">
+          <img src="recepten/voor_en_bij/koreaanse_worteltjes.jpg"/>
+          <div class="recPicText">Koreaanse worteltjes</div>
         </div>
-        </a>
+      </a>
       </div>
+          </div>
+          </div>
 
+ <div class="mySlides fade">
+  <div class="recimages">
       <div class="img-container">
         <div class="imgItself">
-      <a href="#" target="_blank">
-        <img src="recepten/voor_en_bij/gevulde_paprika.jpg"/>
-        <div class="recPicText">Gevulde paprika</div>
+      <a href="groenteragout.html" target="_blank">
+        <img src="recepten/voor_en_bij/groentetagout.jpg"/>
+        <div class="recPicText">Groenteragout</div>
       </div>
       </a>
     </div>
 
     <div class="img-container">
       <div class="imgItself">
-    <a href="#" target="_blank">
-      <img src="recepten/voor_en_bij/pannenkoeken_champignons.jpg"/>
-      <div class="recPicText">Pannenkoeken met romige champignonsaus</div>
+    <a href="aardappels_met_haring.html" target="_blank">
+      <img src="recepten/voor_en_bij/hapje_aardappelen.jpg"/>
+      <div class="recPicText">Hapje aardappelen met haring</div>
     </div>
     </a>
   </div>
+  </div>
 
-        </div>
-      </section>
+ </div>
+
+     
+
+
+<!-- Next and previous buttons  -->
+<div class="prev" onclick="plusSlides(-1)">&#10094;</div>
+<div class="next" onclick="plusSlides(1)">&#10095;</div>
+
+<br>
+          
+<!-- The dots/circles -->
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<!-- <span class="dot" onclick="currentSlide(3)"></span> -->
+</div>  
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
 
       <!-- 4 recepte - Hoofdgerechten -->
 
@@ -242,6 +338,10 @@
           <div class="recHeaderText" id="recHeaderText2">Hoofdgerechten</div>
         </div>
 
+        <div class="slideshow-container">
+           <!-- Full-width images with number and caption text -->
+
+           <div class="mySlides1 fade">
         <div class="recimages">
 
           <div class="img-container">
@@ -255,34 +355,74 @@
 
         <div class="img-container">
           <div class="imgItself">
-        <a href="#" target="_blank">
-          <img src="recepten/hoofdgerechten/tefteli.jpg"/>
-          <div class="recPicText">Tefteli</div>
+        <a href="aardappels_salade.html" target="_blank">
+          <img src="recepten/hoofdgerechten/aardappelen.jpg"/>
+          <div class="recPicText">Aardappels met salade</div>
         </div>
         </a>
       </div>
+
+
+        <div class="img-container">
+          <div class="imgItself">
+        <a href="gevuld_paprika.html" target="_blank">
+          <img src="recepten/hoofdgerechten/gevulde_paprika.jpg"/>
+          <div class="recPicText">Gevulde paprika</div>
+        </div>
+        </a>
+      </div>  
 
         <div class="img-container">
           <div class="imgItself">
         <a href="boekweit_met_champignons .html" target="_blank">
           <img src="recepten/hoofdgerechten/Boekweit_close-up.jpg"/>
-          <div class="recPicText">Boekweit met champignons uit de oven</div>
+          <div class="recPicText">Boekweit met champignons</div>
         </div>
         </a>
       </div>
-     
-      <div class="img-container">
-        <div class="imgItself">
-      <a href="groenteragout.html" target="_blank">
-        <img src="recepten/hoofdgerechten/groentetagout.jpg"/>
-        <div class="recPicText">Groentetagout</div>
-      </div>
-      </a>
-    </div>
-
         </div>
-      </section>
-    
+           </div>
+
+   <!-- Full-width images with number and caption text -->
+
+          <div class="mySlides1 fade">
+            <div class="recimages">
+
+
+  <div class="img-container">
+    <div class="imgItself">
+  <a href="deroeny.html" target="_blank">
+    <img src="recepten/hoofdgerechten/deruny.jpg"/>
+    <div class="recPicText">Aardappelpannenkoekjes</div>
+  </div>
+  </a>
+</div>
+</div>
+ </div>
+     
+
+
+<!-- Next and previous buttons  -->
+<div class="prev" onclick="plusSlides1(-1)">&#10094;</div>
+<div class="next" onclick="plusSlides1(1)">&#10095;</div>
+
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+<span class="dot1" onclick="currentSlide1(1)"></span>
+<span class="dot1" onclick="currentSlide1(2)"></span>
+<!-- <span class="dot" onclick="currentSlide(3)"></span> -->
+</div>  
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+
 
       <!-- 5 recepte - Varenyky en Pyrizhky -->
 
@@ -292,7 +432,10 @@
           <div class="recLogo"><img src="rec_icons/varenykyf.svg"><a href="#"></a></div>
           <div class="recHeaderText" id="recHeaderText4">Varenyky en Pyrizhky</div>
         </div>
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
 
+          <div class="mySlides9 fade">
         <div class="recimages">
 
           <div class="img-container">
@@ -330,9 +473,30 @@
     </div>
     </a>
   </div>
-       
         </div>
-      </section>
+  <!-- <div class="mySlides9 fade"><div> -->
+
+
+<!-- Next and previous buttons  -->
+<!-- <div class="prev" onclick="plusSlides1(-1)">&#10094;</div>
+<div class="next" onclick="plusSlides1(1)">&#10095;</div>
+</div>
+<br> -->
+
+<!-- The dots/circles -->
+<!-- <div style="text-align:center">
+<span class="dot1" onclick="currentSlide1(1)"></span>
+<span class="dot1" onclick="currentSlide1(2)"></span> -->
+<!-- <span class="dot" onclick="currentSlide(3)"></span> -->
+<!-- </div>   -->
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</section>
 
       <!-- 6 recepte - Pannenkoeken en cakes -->
 
@@ -342,6 +506,11 @@
           <div class="recLogo"><img src="rec_icons/pancakes.png"><a href="#"></a></div>
           <div class="recHeaderText" id="recHeaderText5">Pannenkoeken en cakes</div>
         </div>
+
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+
+          <div class="mySlides4 fade">
 
         <div class="recimages">
 
@@ -356,6 +525,15 @@
 
         <div class="img-container">
           <div class="imgItself">
+        <a href="#" target="_blank">
+          <img src="recepten/pannenkoeken_en_cakes/pannenkoeken_champignons.jpg"/>
+          <div class="recPicText">Pannenkoeken met romige champignonsaus</div>
+        </div>
+        </a>
+      </div>
+
+        <div class="img-container">
+          <div class="imgItself">
         <a href="geraspt_gebak.html" target="_blank">
           <img src="recepten/pannenkoeken_en_cakes/geraspt_gebak.jpg"/>
           <div class="recPicText">Geraspt gebak</div>
@@ -365,33 +543,36 @@
 
       <div class="img-container">
         <div class="imgItself">
-      <a href="havermout.html" target="_blank">
-        <img src="recepten/pannenkoeken_en_cakes/havermout.jpg"/>
-        <div class="recPicText">Klassieke havermoutkoekjes</div>
+      <a href="dunne_pannenkoeken.html" target="_blank">
+        <img src="recepten/pannenkoeken_en_cakes/dunne_pannenkoeken.jpg"/>
+        <div class="recPicText">Dunne Pannekoeken</div>
       </div>
       </a>
     </div>
-        
-    <div class="img-container">
-      <div class="imgItself">
-    <a href="wafeltaart.html" target="_blank">
-      <img src="recepten/pannenkoeken_en_cakes/wafeltaart2.jpg"/>
-      <div class="recPicText">Wafeltaart</div>
-    </div>
-    </a>
   </div>
+<!-- <div class="mySlides4 fade"><div> -->
 
-  <!-- <div class="img-container">
-    <div class="imgItself">
-  <a href="#" target="_blank">
-    <img src="recepten/pannenkoeken_en_cakes/dunne_pannenkoeken.jpg"/>
-    <div class="recPicText">Dunne Pannekoeken</div>
-  </div>
-  </a>
-</div> -->
+<!-- Next and previous buttons  -->
+<!-- <div class="prev" onclick="plusSlides1(-1)">&#10094;</div>
+<div class="next" onclick="plusSlides1(1)">&#10095;</div>
+</div>
+<br> -->
 
-        </div>
-      </section>
+<!-- The dots/circles -->
+<!-- <div style="text-align:center">
+<span class="dot1" onclick="currentSlide1(1)"></span>
+<span class="dot1" onclick="currentSlide1(2)"></span> -->
+<!-- <span class="dot" onclick="currentSlide(3)"></span> -->
+<!-- </div>   -->
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+
 
 
       <!-- 7 recepte - Desserts en drankjes -->
@@ -402,6 +583,11 @@
           <div class="recLogo"><img src="rec_icons/drank.svg"><a href="#"></a></div>
           <div class="recHeaderText" id="recHeaderText4">Desserts en drankjes</div>
         </div>
+
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+
+          <div class="mySlides5 fade">
 
         <div class="recimages">
 
@@ -416,13 +602,35 @@
 
         <div class="img-container">
           <div class="imgItself">
-        <a href="#" target="_blank">
-          <img src="recepten/desserts_en_drankjes/uzvar.jpg"/>
-          <div class="recPicText">Oekraïense alcoholvrije punch</div>
+        <a href="havermout.html" target="_blank">
+          <img src="recepten/desserts_en_drankjes/havermout.jpg"/>
+          <div class="recPicText">Klassieke havermoutkoekjes</div>
         </div>
         </a>
       </div>
+          
+      <div class="img-container">
+        <div class="imgItself">
+      <a href="wafeltaart.html" target="_blank">
+        <img src="recepten/desserts_en_drankjes/wafeltaart2.jpg"/>
+        <div class="recPicText">Wafeltaart</div>
+      </div>
+      </a>
+    </div>
 
+    <div class="img-container">
+      <div class="imgItself">
+    <a href="kwarkpannenkoekjes.html" target="_blank">
+      <img src="recepten/desserts_en_drankjes/kwarkpannenkoekjes.jpg"/>
+      <div class="recPicText">Kwarkpannenkoekjes</div>
+    </div>
+    </a>
+  </div>
+</div>
+ </div>
+
+      <div class="mySlides5 fade">
+        <div class="recimages">
       <div class="img-container">
         <div class="imgItself">
       <a href="syrnyky.html" target="_blank">
@@ -434,15 +642,39 @@
 
     <div class="img-container">
       <div class="imgItself">
-    <a href="syrnyky.html" target="_blank">
-      <img src="recepten/desserts_en_drankjes/syrnyky.jpg"/>
-      <div class="recPicText">Syrnyky</div>
+    <a href="koetja.html" target="_blank">
+      <img src="recepten/desserts_en_drankjes/koetja1.jpg"/>
+      <div class="recPicText">Koetja</div>
     </div>
     </a>
   </div>
+  </div>
+</div>
+  
+  
+  <!-- Next and previous buttons  -->
+  <div class="prev" onclick="plusSlides5(-1)">&#10094;</div>
+  <div class="next" onclick="plusSlides5(1)">&#10095;</div>
+  
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+  <span class="dot5" onclick="currentSlide5(1)"></span>
+  <span class="dot5" onclick="currentSlide5(2)"></span>
+  <!-- <span class="dot" onclick="currentSlide(3)"></span> -->
+  </div>  
+  </div>
+  </div>
+</div>
+  </div>
+  </div>
+  </div>
 
-      </div>
-    </section>
+  </section>
+ 
+ 
+ 
   </main>
 
     <!-- //FOOTER -->
@@ -518,6 +750,10 @@
       <a href="#recepten" target="_blank">Contacts</a>
     </div>
     </footer>
+
+<script src="recepten.js"></script>
+<script src='mostpages.js'></script>
+
 </body>
 
 </html>

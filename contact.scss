@@ -1,0 +1,172 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+body {
+  //   background-color: $sndColor;
+  // }
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+html {
+	font-family: 'Comic Neue', Helvetica, sans-serif;
+	font-size: 16px;
+  }
+
+//MENU
+@import 'menu';
+
+//BODY
+@import 'ok_colors';
+@import 'buttons';
+
+// body {
+//   background-color: $sndColor;
+// }
+
+input[type=text], select, textarea {
+    font-size: 20px;
+    color: #454545;
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    background-color: whitesmoke;
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: $ctaHover;
+    color: whitesmoke;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Helvetica, sans-serif;
+    font-size: 25px;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    color: #BD6770;
+    background-color: whitesmoke;
+    border: 1px solid #ccc; /* Gray border */
+    transition: 500ms;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15vh;
+    margin-bottom: 25vh;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    font-family: Helvetica, sans-serif;
+  }
+
+  .rescontainer {
+      display: none;
+  }
+
+
+  
+  /* FOOTER */
+
+  //FOOTER
+@import 'footer';
+  
+  @media only screen and (max-width: 600px) {
+       
+    /* RESPONSIVE MENU */
+    
+    label {
+      cursor: pointer;
+      display: block;
+      width: 100%;
+      background-color: dimgray;
+      position: fixed;
+  }
+      
+
+    
+          /* RESPONSIVE BODY */
+  
+          #index-gallery {
+  display: none;
+          } 
+          
+          .class {
+  display: none;
+          }
+  
+  body {
+    background-color: dimgray;
+  }
+  
+  .resindex-gallery {
+    display: block;
+    margin-top: 2vh;
+    background-color: whitesmoke;
+  }
+  
+  
+   img {
+     width: 100%;
+     margin-bottom: 0em;
+   }
+  
+  .container {
+    display: none;
+  }
+
+        .rescontainer {
+        margin-top: 7vh;
+          margin-left: 1vw;
+          margin-right: 1vw;
+          display: block;
+          font-family: Helvetica, sans-serif;
+          height: 100vh;
+        }
+  
+        .rescontainer label {
+          display: none;
+        }
+  
+        input[type=text], select, textarea {
+          font-size: 20px;
+          color: #332F2E;
+          width: 100%; /* Full width */
+          /* padding: 12px; /* Some padding */  
+          border: 1px solid #ccc; /* Gray border */
+          border-radius: 4px; /* Rounded borders */
+          box-sizing: border-box; /* Make sure that padding and width stays in place */
+          /* margin-top: 6px; Add a top margin */
+          /* margin-bottom: 16px; Bottom margin */
+          resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+          background-color: whitesmoke;
+        }
+        
+        /* Style the submit button with a specific background color etc */
+        input[type=submit] {
+          background-color: #332F2E;
+          color: whitesmoke;
+          /* padding: 12px 20px; */
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          font-family: Helvetica, sans-serif;
+          font-size: 20px;
+        }
+      }
+    
