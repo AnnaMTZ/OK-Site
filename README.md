@@ -10,6 +10,6 @@ At this point of time about 60% of html and css (I prefer to use sass for DRY co
 
 Planning to add js for functionality and animations. 
 
-The whole project is expected to be completed before 30 December 2020. 
+The whole project is expected to be completed before 15 February 2021. 
 
 
