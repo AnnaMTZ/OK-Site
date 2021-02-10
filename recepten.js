@@ -1,34 +1,22 @@
 
 // Gallery slideshow 1 (voor en bij)
 
-var slideIndex = 1;
-showSlides(slideIndex);
+var slideIndex21 = 1;
+showSlides21(slideIndex21);
 
 // Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides21(n) {
+  showSlides21(slideIndex21 += n);
 }
 
 // Thumbnail image controls
-function currentSlide(n) {
-  slideIndex = n
-  showSlides(n);
+function currentSlide21(n) {
+  slideIndex21 = n
+  showSlides21(n);
 }
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" dotActive", "");
-  }
-  slides[slideIndex -1].style.display = "block";
-  dots[slideIndex-1].className += " dotActive";
+function showSlides21(n) {
+  var slides = document.getElementsByClassName("mySlides21");
+  showSlidesGeneric(n, slides, slideIndex21);
 } 
 
 
@@ -48,22 +36,11 @@ function currentSlide1(n) {
   showSlides1(n);
 }
 
-function showSlides1(n) {
-  var i;
-  var slides1 = document.getElementsByClassName("mySlides1");
-  var dots1 = document.getElementsByClassName("dot1");
-  if (n > slides1.length) {slideIndex1 = 1}
-  if (n < 1) {slideIndex1 = slides1.length}
-  for (i = 0; i < slides1.length; i++) {
-      slides1[i].style.display = "none";
-  }
-  for (i = 0; i < dots1.length; i++) {
-      dots1[i].className = dots1[i].className.replace(" dotActive", "");
-  }
-  slides1[slideIndex1 -1].style.display = "block";
-  dots1[slideIndex1-1].className += " dotActive";
-} 
 
+function showSlides1(n) {
+  var slides = document.getElementsByClassName("mySlides1");
+  showSlidesGeneric(n, slides, slideIndex1);
+} 
 
 
 // Gallery slideshow 5 (desserts and drankjes)
@@ -83,17 +60,237 @@ function currentSlide5(n) {
 }
 
 function showSlides5(n) {
-  var i;
   var slides5 = document.getElementsByClassName("mySlides5");
-  var dots5 = document.getElementsByClassName("dot5");
-  if (n > slides5.length) {slideIndex5 = 1}
-  if (n < 1) {slideIndex5 = slides5.length}
-  for (i = 0; i < slides5.length; i++) {
-      slides5[i].style.display = "none";
-  }
-  for (i = 0; i < dots5.length; i++) {
-      dots5[i].className = dots5[i].className.replace("dotActive", "");
-  }
-  slides5[slideIndex5 -1].style.display = "block";
-  dots5[slideIndex5-1].className += "dotActive";
+  showSlidesGeneric(n, slides5, slideIndex5);
 } 
+
+
+// Gallery slideshow 4 (pannenkoeken en cakes)
+
+var slideIndex4 = 1;
+showSlides4(slideIndex4);
+
+// Next/previous controls
+
+function plusSlides4(n) {
+  showSlides4(slideIndex4 += n);
+}
+
+// Thumbnail image controls
+function currentSlide4(n) {
+  slideIndex = n
+  showSlides4(n);
+}
+
+function showSlides4(n) {
+  var slides = document.getElementsByClassName("mySlides4");
+  showSlidesGeneric(n, slides, slideIndex4);
+} 
+
+
+// Main function
+
+
+// function showSlidesGeneric(n, slides, dots, slideIndex) {
+//   var i;
+
+//   if (n > slides.length) {slideIndex = 1}
+//   if (n < 1) {slideIndex = slides.length}
+//   for (i = 0; i < slides.length; i++) {
+//       slides[i].style.display = "none";
+//   }
+
+//   slides[slideIndex -1].style.display = "block";
+
+//     for (i = 0; i < dots.length; i++) {
+//         dots[i].className = dots[i].className.replace(" dotActive", "");
+//     }
+//     dots[slideIndex-1].className += "dotActive";
+// };
+
+
+function showSlidesGeneric(n, slides, slideIndex) {
+  var i;
+
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+
+  slides[slideIndex -1].style.display = "block";
+
+};
+
+// MOBILE ______________________________________________________________________________________________________________
+
+// Script for a mobile version
+
+
+// Gallery slideshow 2 (Salades)
+
+var slideIndex2 = 1;
+showSlides2(slideIndex2);
+
+// Next/previous controls
+function plusSlides2(n) {
+  showSlides2(slideIndex2 += n);
+  console.log('it works');
+}
+
+// Thumbnail image controls
+function currentSlide2(n) {
+  slideIndex2 = n
+  showSlides2(n);
+}
+
+
+function showSlides2(n) {
+  var slides = document.getElementsByClassName("mySlides2");
+
+  showSlidesGeneric(n, slides, slideIndex2);
+  
+} 
+
+
+// Gallery slideshow 17 (Soupen en borsh)
+
+var slideIndex17 = 1;
+showSlides17(slideIndex17);
+
+// Next/previous controls
+function plusSlides17(n) {
+  showSlides17(slideIndex17 += n);
+}
+
+// Thumbnail image controls
+function currentSlide17(n) {
+  slideIndex17 = n
+  showSlides17(n);
+}
+
+
+function showSlides17(n) {
+  var slides = document.getElementsByClassName("mySlides17");
+  showSlidesGeneric(n, slides, slideIndex17);
+} 
+
+
+
+
+
+// Gallery slideshow 16 (voor en bij)
+
+var slideIndex16 = 1;
+showSlides16(slideIndex16);
+
+// Next/previous controls
+function plusSlides16(n) {
+  showSlides16(slideIndex16 += n);
+  console.log('works')
+}
+
+// Thumbnail image controls
+function currentSlide16(n) {
+  slideIndex16 = n
+  showSlides16(n);
+}
+
+function showSlides16(n) {
+  var slides = document.getElementsByClassName("mySlides16");
+  showSlidesGeneric(n, slides, slideIndex16);
+} 
+
+
+// Gallery slideshow 15 (Hoofdgerechten)
+
+var slideIndex15 = 1;
+showSlides15(slideIndex15);
+
+// Next/previous controls
+function plusSlides15(n) {
+  showSlides15(slideIndex15 += n);
+}
+
+// Thumbnail image controls
+function currentSlide15(n) {
+  slideIndex15 = n
+  showSlides15(n);
+}
+
+
+function showSlides15(n) {
+  var slides = document.getElementsByClassName("mySlides15");
+  showSlidesGeneric(n, slides, slideIndex15);
+} 
+
+
+// Gallery slideshow 18 (Varenyky & pyrizhky)
+
+var slideIndex18 = 1;
+showSlides18(slideIndex18);
+
+// Next/previous controls
+function plusSlides18(n) {
+  showSlides18(slideIndex18 += n);
+}
+
+// Thumbnail image controls
+function currentSlide18(n) {
+  slideIndex18 = n
+  showSlides18(n);
+}
+
+
+function showSlides18(n) {
+  var slides = document.getElementsByClassName("mySlides18");
+  showSlidesGeneric(n, slides, slideIndex18);
+} 
+
+
+// Gallery slideshow 19 (Pannenkoeken en Cakes)
+
+var slideIndex19 = 1;
+showSlides19(slideIndex19);
+
+// Next/previous controls
+function plusSlides19(n) {
+  showSlides19(slideIndex19 += n);
+}
+
+// Thumbnail image controls
+function currentSlide19(n) {
+  slideIndex19 = n
+  showSlides19(n);
+}
+
+function showSlides19(n) {
+  var slides = document.getElementsByClassName("mySlides19");
+  showSlidesGeneric(n, slides, slideIndex19);
+} 
+
+
+// Gallery slideshow 5 (desserts and drankjes)
+
+var slideIndex20 = 1;
+showSlides20(slideIndex20);
+
+// Next/previous controls
+function plusSlides20(n) {
+  showSlides20(slideIndex20 += n);
+}
+
+// Thumbnail image controls
+function currentSlide20(n) {
+  slideIndex20 = n
+  showSlides20(n);
+}
+
+function showSlides20(n) {
+  var slides = document.getElementsByClassName("mySlides20");
+  showSlidesGeneric(n, slides,  slideIndex20);
+} 
+
+
+
+
