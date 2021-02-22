@@ -6,10 +6,10 @@ Idea belongs to my Ukrainian friend.
 
 Design and development done by me as my first web development project. 
 
-At this point of time about 60% of html and css (I prefer to use sass for DRY code) for the site is completed.
+At this point of time about 80% of html and css (I prefer to use SASS) for the site is completed.
+Almost all the layout were done using grid and flex what reduced usage of media queries. 
+I've used JavaScript to add some animations and functional elements for better UX.
 
-Planning to add js for functionality and animations. 
-
-The whole project is expected to be completed before 15 February 2021. 
+The whole project is expected to be completed by the end of March 2021. 
 
 
