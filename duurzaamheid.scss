@@ -1,0 +1,129 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+html {
+	font-family: 'Comic Neue', Helvetica, sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+  }
+
+//MENU
+@import 'menu';
+
+//BODY
+@import 'ok_colors';
+@import 'buttons';
+
+//Scroll to top
+
+.to-top {
+    background: white;
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: dimgrey;
+    opacity: 0;
+    pointer-events: none;
+	transition: all .4s;
+    font-size: 2.5rem;
+    z-index: 100;
+    }
+    
+    .to-top.active {
+        bottom: 4rem;
+        pointer-events: auto;
+        opacity: 1;
+	}
+	
+
+.mainGrid {
+    background: url(duurzaamheid.jpg) center no-repeat;
+    background-size: cover;
+ height: 160vh;
+ position: static;
+}
+
+
+.duurzaamheid {
+    background-color: #BFB526;
+    width: 80vw;
+    height: 120vh;
+    margin-top: 20vh;
+   position: absolute;
+
+}
+
+
+.duurzaamheidText {
+    padding: 5vh 3vw;
+    position: relative;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    user-select: text;
+    cursor: text;
+    font-family: 'Comic Neue', Helvetica, sans-serif;
+}
+
+.duurzaamheidText h1 {
+    font-size: 2.5rem;
+    user-select: text;
+    cursor: text;
+    font-family: 'Comic Neue', Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.fa-chevron-up {
+    cursor: pointer;
+}
+
+
+//FOOTER
+@import 'footer';
+
+@media screen and (max-width: 600px) { 
+
+
+
+.mobLogo {
+    position: absolute;
+    z-index: 10;
+    top: 0px;
+    left: 0px;
+    padding: .5vh 0;
+}
+
+
+.mainGrid {
+    background: #BFB526;
+    background-size: cover;
+ height: 305vh;
+ position:static;
+}
+
+
+.duurzaamheid {
+    width: 100vw;
+    height: 100%;
+   position: absolute;
+   margin-top: 5vh;
+
+}
+
+
+}

@@ -241,7 +241,7 @@ input {
 .only a:hover {
   -webkit-transition: 500ms;
   transition: 500ms;
-  color: #8C5A27;
+  color: #BFB526;
 }
 
 .menu-container {
@@ -299,12 +299,14 @@ _::-webkit-full-page-media .only, _:future .only, :root .safari_only .only {
   .mobLogo {
     display: block;
     position: absolute;
+    z-index: 110;
     top: 1rem;
     left: 1rem;
   }
   .mobLogo img {
+    position: relative;
     width: 22vw;
-    z-index: 10;
+    z-index: 110;
     border-radius: 85px;
   }
   .hamburger {
@@ -595,7 +597,7 @@ html {
 }
 
 .to-top.active {
-  bottom: 2rem;
+  bottom: 4rem;
   pointer-events: auto;
   opacity: 1;
 }
@@ -637,7 +639,7 @@ html {
       grid-template-columns: 1fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  background: url(DSC_0240.JPG) center no-repeat;
+  background: url(kenmerken.jpg) center no-repeat;
   background-size: cover;
   height: 150vh;
   font-size: 3rem;
@@ -743,6 +745,13 @@ html {
   padding-bottom: 2vh;
 }
 
+.footerCont a {
+  -webkit-user-select: pointer;
+     -moz-user-select: pointer;
+      -ms-user-select: pointer;
+          user-select: pointer;
+}
+
 .mediaFooter .mediaFooterCont .mediaFooterText {
   display: none;
 }
@@ -764,6 +773,27 @@ html {
   cursor: pointer;
 }
 
+#contactEmail {
+  color: white;
+  line-height: 2.7rem;
+  font-size: 1.1rem;
+  font-weight: 100;
+  margin: 0 2.5vw;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
+  cursor: text;
+}
+
+#contactEmail {
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
+  cursor: text;
+}
+
 .footer a:hover {
   color: #BFB526;
 }
@@ -773,6 +803,7 @@ html {
   color: #BFB526;
   line-height: 3rem;
   font-weight: bold;
+  text-align: left;
 }
 
 #fHead:hover {
@@ -781,6 +812,12 @@ html {
 
 #toTheText {
   display: none;
+}
+
+#copyright {
+  margin-left: 65vw;
+  font-family: 'Comic Neue', Helvetica, sans-serif;
+  padding-bottom: 1vh;
 }
 
 @media screen and (max-width: 1000px) and (min-width: 600px) {
@@ -836,23 +873,25 @@ html {
     display: none;
   }
   .mobileFooterText {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: 100%;
     margin: auto;
-    height: 6vh;
+    height: 7vh;
     margin: 0 auto;
     left: 0;
     bottom: 0;
     background-color: whitesmoke;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     font-family: 'Comic Neue', Helvetica, sans-serif;
+  }
+  .mobileFooterText img {
+    width: 1.5rem;
   }
   .mobileFooterText a {
     display: block;
@@ -880,7 +919,7 @@ html {
         grid-template-rows: 1fr;
     background: #233674;
     background-size: cover;
-    height: 150vh;
+    height: 100%;
     font-size: 3rem;
     -webkit-user-select: text;
        -moz-user-select: text;
