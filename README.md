@@ -18,4 +18,4 @@ I've also used intersection observer api.
 The contact form I've created using Express.js and Nodemailer with the help of this video by  Conor Bailey - https://www.youtube.com/watch?v=30VeUWxZjS8
 
 
-The whole project is expected to be completed by the end of May 2021. 
+The whole project is expected to be completed by the end of June 2021. 
